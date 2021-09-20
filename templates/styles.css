@@ -1,0 +1,1003 @@
+/* <<<<<---- GENERAL ---->>>>*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+main {
+    width: 100%;
+}
+
+
+/* <<<<<---- FIN DE GENERAL ---->>>>*/
+
+
+/* <<<<<----BARRA DE NAVEGACION---->>>>*/
+
+.content {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    padding: 25px 0;
+    transition: all 0.3s ease;
+    background-color: #2d2c2c;
+    opacity: 0.8;
+}
+
+.navbar.sticky {
+    padding: 10px 0;
+    background-color: #2d2c2c;
+    opacity: 10;
+}
+
+.navbar .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navbar .logo a img {
+    width: 180px;
+    height: 50px;
+    opacity: 10;
+    margin-top: 10px;
+}
+
+.navbar .menu-list {
+    display: inline-flex;
+}
+
+.menu-list li {
+    list-style: none;
+}
+
+.menu-list li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    text-decoration: none;
+}
+
+nav ul li .current {
+    color: #9a9696;
+}
+
+.menu-list li a:hover {
+    color: rgb(24, 201, 68);
+}
+
+.banner {
+    height: 100vh;
+    background: url(https://nuteducacion.com.ar/wp-content/uploads/2020/04/machine-learning.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.banner-2 {
+    height: 80vh;
+    background: url(https://presenterse.com/wp-content/uploads/2020/06/INVERTIR-EN-TECNOLOGIA.png) no-repeat;
+    opacity: 10;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.que-hacemos-main h1 {
+    margin: 20px 20px;
+    font-size: 40px;
+    color: #6d7474;
+    text-align: center;
+}
+
+.about {
+    padding: 40px 0;
+}
+
+.about .title {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.about p {
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.icon {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.icon.cancel-btn {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fa-whatsapp {
+    margin-top: 8px;
+}
+
+nav ul ul {
+    background-color: #2b2b2b;
+    opacity: 0.5;
+    position: absolute;
+    line-height: 70px;
+    padding-top: 15px;
+    visibility: hidden;
+    transition: top .3s;
+}
+
+nav ul li:hover>ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+li.nav-menu-item {
+    height: 20px;
+}
+
+nav ul ul li {
+    position: relative;
+    margin-right: 30px;
+    width: 130px;
+    float: none;
+    display: list-item;
+    list-style: none;
+}
+
+#twitter-nav:hover {
+    color: #218be2;
+}
+
+#linkedin-nav:hover {
+    color: #1e78b9;
+}
+
+@media (max-width: 900px) {
+    body.disabledScroll {
+        overflow: hidden;
+    }
+    nav ul ul {
+        display: none;
+    }
+    .icon {
+        display: block;
+    }
+    .icon.hide {
+        display: none;
+    }
+    .navbar .menu-list {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        background: #222;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu-list.active {
+        left: 0%;
+    }
+    .navbar .menu-list li {
+        margin-top: 45px;
+    }
+    .navbar .menu-list li a {
+        font-size: 23px;
+    }
+    .redes-sociales {
+        justify-content: center;
+    }
+}
+
+
+/* <<<<<----FIN DE BARRA DE NAVEGACION---->>>>*/
+
+
+/* <<<<<----CUERPO DE PAGINA  INDEX---->>>>*/
+
+
+/* <<<<<---- fin CUERPO DE PAGINA  INDEX---->>>>*/
+
+
+/* <<<<<----inicio CUERPO DE PAGINA  QUIENES-SOMOS ---->>>>*/
+
+
+/* <<<<<---- fin CUERPO DE PAGINA  QUIENES SOMOS---->>>>*/
+
+
+/* <<<<<----inicio CUERPO DE PAGINA  QUE HACEMOS ---->>>>*/
+
+.que-hacemos-main img {
+    margin-top: 80px;
+    width: 100%;
+}
+
+.que-hacemos-desarrollo {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+.que-hacemos-desarrollo img {
+    background-image: url(http://www.gelfuzion.com/img/slides/nivo/bg-1.jpg);
+    filter: brightness(0.5);
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+}
+
+.que-hacemos-desarrollo h1 {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-size: 5rem;
+    top: 160px;
+    left: 18%;
+    z-index: 1;
+}
+
+.que-hacemos-desarrollo h1::before {
+    content: '';
+    position: absolute;
+    left: 45%;
+    bottom: -80px;
+    background-color: #a01e0d;
+    height: 4px;
+    box-sizing: border-box;
+    width: 100px;
+    z-index: 1;
+}
+
+.que-hacemos-agilidad {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.que-hacemos-agilidad img {
+    background-image: url(http://www.gelfuzion.com/img/slides/nivo/bg-1.jpg);
+    filter: brightness(0.4);
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+}
+
+.que-hacemos-agilidad h1 {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-size: 5rem;
+    top: 160px;
+    left: 18%;
+    z-index: 1;
+}
+
+.que-hacemos-agilidad h1::before {
+    content: '';
+    position: absolute;
+    left: 45%;
+    bottom: -80px;
+    background-color: #a01e0d;
+    height: 4px;
+    box-sizing: border-box;
+    width: 100px;
+    z-index: 1;
+}
+
+
+/* SECCION DE SERVICIOS */
+
+.titulo-servicios {
+    display: flex;
+    justify-content: center;
+}
+
+.servicios {
+    display: flex;
+    justify-content: center;
+    background: url(https://blog.underc0de.org/wp-content/uploads/2021/05/fd.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+    border-radius: 2rem;
+    width: 80%;
+    height: 80vh;
+    margin: 50px 40px 50px 100px;
+}
+
+.soporte-rrhh,
+.reclutamiento-it {
+    width: 50%;
+    height: 400px;
+    margin: 10px 20px 10px 50px;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+}
+
+.soporte-rrhh::before,
+.reclutamiento-it::before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+    margin: -20px;
+}
+
+.fa-hands-helping,
+.fa-user-tie {
+    width: 100px;
+    height: 100px;
+    margin: 10px 10px 10px 10px;
+    color: rgb(255, 255, 255);
+}
+
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+    width: 50px;
+}
+
+.logo-soporte,
+.logo-reclutamiento {
+    display: flex;
+    justify-content: center;
+}
+
+.reclutamiento-it h1,
+.soporte-rrhh h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.capacitacion-imagen img,
+.facilitacion-imagen img,
+.coaching-imagen img,
+.modelo-operativo-imagen img {
+    width: 150px;
+    height: 150px;
+    margin-left: 85px;
+}
+
+.servicios2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.servicios2 article {
+    background-color: rgb(115, 154, 206);
+    width: 25%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 1rem;
+}
+
+.servicios2 article h1 {
+    color: rgb(230, 227, 227);
+    text-align: center;
+    font-size: 25px;
+}
+
+.sv2-texto {
+    color: rgb(230, 227, 227);
+}
+
+.capacitacion-imagen,
+.facilitacion-imagen,
+.coaching-imagen,
+.modelo-operativo-imagen {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.que-hacemos-digitalizacion {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.que-hacemos-digitalizacion img {
+    background-image: url(http://www.gelfuzion.com/img/slides/nivo/bg-1.jpg);
+    filter: brightness(0.3);
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+}
+
+.que-hacemos-digitalizacion h1 {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-size: 4rem;
+    top: 160px;
+    left: 18%;
+    z-index: 1;
+}
+
+.que-hacemos-digitalizacion h1::before {
+    content: '';
+    position: absolute;
+    left: 45%;
+    bottom: -80px;
+    background-color: #1ba761;
+    height: 4px;
+    box-sizing: border-box;
+    width: 100px;
+    z-index: 1;
+}
+
+.consultoria-imagen img,
+.fabrica-imagen img,
+.operacion-imagen img {
+    width: 350px;
+    height: 280px;
+    margin-left: 85px;
+    border-radius: 1rem;
+    z-index: -1;
+}
+
+.servicios3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.servicios3 article {
+    background-color: rgb(255, 255, 255);
+    z-index: -2;
+    width: 40%;
+    height: 450px;
+    margin-left: 10%;
+    margin-right: 3%;
+    border-radius: 1rem;
+    margin-top: 30px;
+}
+
+.sv3-texto {
+    color: rgb(0, 0, 0);
+}
+
+.sv3-texto ul {
+    margin-top: 80px;
+}
+
+.consultoria-imagen,
+.fabrica-imagen,
+.operacion-imagen {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.consultoria {
+    display: flex;
+    flex-direction: row;
+}
+
+.consultoria section h1 {
+    color: rgb(67, 69, 216);
+    background-color: rgb(255, 255, 255);
+    border: 3px ridge rgb(67, 69, 216);
+    text-align: center;
+    font-size: 25px;
+    z-index: 10;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20rem;
+}
+
+.consultoria-texto ul {
+    color: rgb(0, 0, 0);
+    color: #fff;
+    background: -webkit-linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), -webkit-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+    background: -o-linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), -o-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+    background: -moz-linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), -moz-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+    background: linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+    border-top-left-radius: 0%;
+    border-top-right-radius: 55%;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 5%;
+    margin-bottom: 200px;
+    margin-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 18px;
+    font-size: 25px;
+}
+
+.fabrica {
+    display: flex;
+    flex-direction: row;
+    padding-left: 50%;
+}
+
+.fabrica section h1 {
+    color: rgb(67, 69, 216);
+    background-color: rgb(255, 255, 255);
+    border: 3px ridge rgb(67, 69, 216);
+    text-align: center;
+    font-size: 25px;
+    z-index: 10;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20rem;
+}
+
+.fabrica-texto ul {
+    color: rgb(0, 0, 0);
+    color: #fff;
+    background: -webkit-linear-gradient(110deg, #3299df 40%, rgba(0, 0, 0, 0) 30%), -webkit-radial-gradient(farthest-corner at 0% 0%, #543ea5 70%, #1376af 70%);
+    background: -o-linear-gradient(110deg, #437fda 40%, rgba(0, 0, 0, 0) 30%), -o-radial-gradient(farthest-corner at 0% 0%, #547fc0 70%, #113596 70%);
+    background: -moz-linear-gradient(110deg, #417abb 40%, rgba(0, 0, 0, 0) 30%), -moz-radial-gradient(farthest-corner at 0% 0%, #527ba1 70%, #1787e2 70%);
+    background: linear-gradient(110deg, #1493b9 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #1b5392 70%, #59b5cc 70%);
+    border-top-left-radius: 30%;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 25%;
+    margin-bottom: 200px;
+    margin-right: 20px;
+    padding-top: 20px;
+    width: 300px;
+    padding-bottom: 18px;
+    font-size: 25px;
+}
+
+.operacion {
+    display: flex;
+    flex-direction: row;
+}
+
+.operacion section h1 {
+    color: rgb(67, 69, 216);
+    background-color: rgb(255, 255, 255);
+    border: 3px ridge rgb(67, 69, 216);
+    text-align: center;
+    font-size: 25px;
+    z-index: 10;
+    margin-left: 30px;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20rem;
+}
+
+.operacion-texto ul {
+    color: rgb(0, 0, 0);
+    color: #fff;
+    background: -webkit-linear-gradient(110deg, #2c9188 40%, rgba(0, 0, 0, 0) 30%), -webkit-radial-gradient(farthest-corner at 0% 0%, #15adb8 70%, #62e0da 70%);
+    background: -o-linear-gradient(110deg, #238363 40%, rgba(0, 0, 0, 0) 30%), -o-radial-gradient(farthest-corner at 0% 0%, #17f09d 70%, #113596 70%);
+    background: -moz-linear-gradient(110deg, #1ccc89 40%, rgba(0, 0, 0, 0) 30%), -moz-radial-gradient(farthest-corner at 0% 0%, #48a38d 70%, #22bda8 70%);
+    background: linear-gradient(110deg, #23b6bb 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #20c960 70%, #1d975a 70%);
+    border-top-left-radius: 10%;
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 25%;
+    margin-bottom: 250px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+.que-hacemos-estrategia {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.que-hacemos-estrategia img {
+    background-image: url(http://www.gelfuzion.com/img/slides/nivo/bg-1.jpg);
+    filter: brightness(0.4);
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+}
+
+.que-hacemos-estrategia h1 {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-size: 5rem;
+    top: 160px;
+    left: 30%;
+    z-index: 1;
+}
+
+.que-hacemos-estrategia h1::before {
+    content: '';
+    position: absolute;
+    left: 45%;
+    bottom: -80px;
+    background-color: #a01e0d;
+    height: 4px;
+    box-sizing: border-box;
+    width: 100px;
+    z-index: 1;
+}
+
+.ppp h4 {
+    font-size: 30px;
+    color: #547fc0;
+}
+
+
+/* <<<<<---- fin CUERPO DE PAGINA  QUE HACEMOS---->>>>*/
+
+
+/* <<<<<<<--------  inicio FOOTER DE LA PAGINA ------------->>>>>>>*/
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lista-footer {
+    list-style: none;
+}
+
+.footer {
+    background-color: #23242b;
+    padding: 70px 0;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    margin-left: 15px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #2c888f;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.lista-footer>li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.lista-footer>li>a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.lista-footer>li>a:hover {
+    color: rgb(255, 255, 255);
+    padding-left: 8px;
+}
+
+.redes-sociales-footer a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #b6b6b6;
+    transition: all 0.5s ease;
+}
+
+.redes-sociales-footer a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+.footer-marca {
+    background-color: #18191b;
+    color: #ffffff;
+    padding: 10px 10px;
+    width: 100%;
+    height: 50px;
+}
+
+
+/* <<<<<<<--------  fin FOOTER DE LA PAGINA ------------->>>>>>>*/
+
+
+/* <<<<<<<--------  inicio  Whattsap Icon DE LA PAGINA ------------->>>>>>>*/
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 40px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.float:hover {
+    text-decoration: none;
+    color: #25d366;
+    background-color: #fff;
+}
+
+.my-float {
+    margin-top: 16px;
+}
+
+
+/* <<<<<<<--------  fin Whattsap Icon DE LA PAGINA ------------->>>>>>>*/
+
+
+/* @media querys*/
+
+@media (max-width: 968px) {
+    body {
+        padding-top: 70px 20px 0;
+    }
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1170px) {
+    .que-hacemos-main,
+    .que-hacemos-main img {
+        max-width: 1170px;
+    }
+    .que-hacemos-main {
+        max-width: 720px;
+    }
+    .que-hacemos-main img {
+        margin-top: 35px;
+        width: 720px;
+    }
+    .que-hacemos-desarrollo h1 {
+        color: rgb(255, 255, 255);
+        position: absolute;
+        font-size: 5rem;
+        top: 160px;
+        left: 10%;
+        z-index: 1;
+    }
+    .que-hacemos-agilidad img {
+        height: 300px;
+        margin-top: 100px;
+    }
+    .que-hacemos-agilidad h1 {
+        font-size: 35px;
+        top: 220px;
+        left: 20%;
+    }
+    .que-hacemos-agilidad h1::before {
+        bottom: -50px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 1050px) {
+    body {
+        overflow-x: hidden;
+    }
+    .ppp h4 {
+        font-size: 20px;
+    }
+    .servicios {
+        flex-direction: column;
+        left: 10%;
+    }
+    .que-hacemos-main h1 {
+        font-size: 30px;
+    }
+    .servicios2 {
+        flex-direction: column;
+        width: 100%;
+    }
+    .capacitacion-imagen img,
+    .facilitacion-imagen img,
+    .coaching-imagen img,
+    .modelo-operativo-imagen img {
+        margin-top: 20px;
+        width: 200px;
+        height: 200px;
+    }
+    .sv2-texto ul {
+        margin-top: 50px;
+    }
+    .servicios2 article {
+        background-color: rgb(115, 154, 206);
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        height: 250px;
+        margin-right: 20px;
+        margin-top: 30px;
+        border-radius: 1rem;
+    }
+    .servicios2 h1 {
+        margin-left: 30px;
+    }
+    .que-hacemos-desarrollo {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        z-index: 1;
+        margin-bottom: 20px;
+    }
+    .que-hacemos-desarrollo img {
+        height: 300px;
+    }
+    .que-hacemos-desarrollo h1 {
+        color: rgb(255, 255, 255);
+        position: absolute;
+        font-size: 30px;
+        top: 160px;
+        left: 20%;
+    }
+    .que-hacemos-desarrollo h1::before {
+        left: 35%;
+    }
+    .servicios {
+        background-attachment: initial;
+        width: 100%;
+        height: 140vh;
+        margin: 0;
+    }
+    .soporte-rrhh,
+    .reclutamiento-it {
+        width: 70%;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 1050px) {
+    .servicios3 {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .consultoria-imagen img,
+    .fabrica-imagen img,
+    .operacion-imagen img {
+        margin-top: 20px;
+        width: 200px;
+        height: 170px;
+    }
+    .sv3-texto ul {
+        margin-top: 50px;
+    }
+    .servicios3 article {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        height: 230px;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 100px;
+        border-radius: 1rem;
+    }
+    .servicios3 h1 {
+        margin-left: 30px;
+    }
+    .fabrica {
+        padding-left: 0%;
+    }
+    .consultoria-texto ul {
+        border-top-right-radius: 30%;
+    }
+    .que-hacemos-digitalizacion {
+        height: 300px;
+    }
+    .que-hacemos-digitalizacion img {
+        height: 300px;
+        margin-top: 30px;
+    }
+    .que-hacemos-digitalizacion h1 {
+        font-size: 30px;
+    }
+    .que-hacemos-estrategia {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        z-index: 1;
+    }
+    .que-hacemos-estrategia img {
+        height: 300px;
+    }
+    .que-hacemos-estrategia h1 {
+        color: rgb(255, 255, 255);
+        position: absolute;
+        font-size: 40px;
+        top: 160px;
+        left: 20%;
+        z-index: 1;
+    }
+    .que-hacemos-estrategia h1::before {
+        content: '';
+        position: absolute;
+        left: 45%;
+        bottom: -80px;
+        background-color: #a01e0d;
+        height: 4px;
+        box-sizing: border-box;
+        width: 100px;
+        z-index: 1;
+    }
+}

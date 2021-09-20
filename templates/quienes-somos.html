@@ -1,16 +1,90 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
     <link rel="shortcut icon" href="/img/iMachine-icono.ico">
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script defer src="/app.js"></script>
     <title>iMachine</title>
-
+    <style>
+        .qn-sm-contenedor {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+            z-index: 1;
+        }
+        
+        .qn-sm-contenedor h1 {
+            color: rgb(255, 255, 255);
+            position: absolute;
+            font-size: 5rem;
+            top: 150px;
+            left: 30%;
+            z-index: 1;
+        }
+        
+        .qn-sm-contenedor h1::before {
+            content: '';
+            position: absolute;
+            left: 40%;
+            bottom: -80px;
+            background-color: rgb(37 211 102);
+            height: 4px;
+            box-sizing: border-box;
+            width: 100px;
+            z-index: 1;
+        }
+        
+        .nuestro-equipo {
+            background-image: url(http://www.gelfuzion.com/img/slides/nivo/bg-1.jpg);
+            filter: brightness(0.4);
+            width: 100%;
+            height: 100vh;
+            height: 500px;
+        }
+        /* ----- SECCION DE MUNDO -------*/
+        
+        .mundo-container {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .mundo-column>img {
+            width: 500px;
+        }
+        
+        .mundo-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin: 20px 20px;
+            font-size: 20px;
+        }
+        
+        .mundo-column-izq {
+            right: 50%;
+        }
+        
+        .mundo-column>p {
+            background-color: rgb(71 95 125);
+            color: white;
+            border-radius: 1rem;
+            padding: 5px 5px;
+        }
+        
+        @media (max-width: 720px) {
+            .footer-col {
+                width: 50%;
+                margin-bottom: 30px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -19,18 +93,18 @@
         <i class="fab fa-whatsapp"></i>
     </a>
     <!-- Barra de Navegacion -->
-    <header>
+    <header class="header">
         <nav class="navbar">
             <div class="content">
                 <div class="logo">
                     <a href="/templates/index.html"><img src="/img/imachine-logo-principal.png" alt=""></a>
                 </div>
-                <ul class="menu-list">
+                <ul class="menu-list" id="navigation">
                     <div class="icon cancel-btn">
                         <i class="fas fa-times"></i>
                     </div>
                     <li>
-                        <a href="/templates/quienes-somos.html">¿Quiénes somos?</a>
+                        <a class="current" href="/templates/quienes-somos.html">¿Quiénes somos?</a>
                     </li>
                     <li>
                         <a href="/templates/que-hacemos.html">¿Qué hacemos?</a>
@@ -66,11 +140,35 @@
         </nav>
     </header>
 
-    <!-- CUERPO DE PAGINA -->
-    <main>
-        <div class="banner"></div>
-    </main>
+    <main class="main-quienes-somos">
+        <section class="qn-sm-contenedor">
+            <h1>Nuestro equipo</h1>
+            <img src="/img/nuestro-equipo.jpg" class="nuestro-equipo" alt="">
+            <h2 style="color:rgb(109, 116, 116); margin-top: 20px;">Somos una compañía de consultoría en transformación de negocios, con un estilo ágil, innovador y flexible. </h2>
+        </section>
 
+
+        <section class="mundo-container">
+            <div class="mundo-column mundo-column-der">
+                <p data-aos="fade-right" data-aos-duration="1000">Cubrimos las dimensiones Cultura, Organización, Personas, Procesos y Tecnología
+                </p>
+                <p data-aos="fade-right" data-aos-duration="1000">Flexibilidad, cercanía, pragmatismo, innovación y transformación
+                </p>
+                <p data-aos="fade-right" data-aos-duration="1000">Creemos en las personas como factor decisivo de éxito de las organizaciones.
+                </p>
+            </div>
+            <div class="mundo-column">
+                <img src="/img/imachine-mundo.png" alt="">
+            </div>
+            <div class="mundo-column mundo-column-izq">
+                <p data-aos="fade-left" data-aos-duration="1000">30 años de experiencia en diferentes culturas y mercados.
+                </p>
+                <p data-aos="fade-left" data-aos-duration="1000">Hemos desempeñado proyectos en varias empresas en distintas partes del mundo</p>
+                <p data-aos="fade-left" data-aos-duration="1000">Conocemos el mercado y diferentes industrias: Tenemos una cultura digital
+                </p>
+            </div>
+        </section>
+    </main>
     <footer>
         <div class="footer">
             <section class="container-footer">
@@ -98,7 +196,7 @@
                         <ul class="lista-footer">
                             <li><a href="#footer"><i class="fas fa-envelope"></i> imachinerobots@gmail.com</a></li>
                             <li><a href="#footer"><i class="fas fa-phone"></i> +54 9 11 6238-3526</a></li>
-                            <li><a href='https://es.pngtree.com/' target="blank"><i class="fas fa-palette"></i> Ilustración png de .pngtree.com/</a></li>
+                            <li><a href='https://es.pngtree.com/'><i class="fas fa-palette"></i> Ilustración png de .pngtree.com/</a></li>
 
                         </ul>
                     </div>
@@ -106,8 +204,8 @@
                     <div class="footer-col">
                         <h4>Redes sociales</h4>
                         <div class="redes-sociales-footer">
-                            <a href="https://www.linkedin.com/company/imachine-consulting/"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-linkedin"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>
@@ -118,11 +216,16 @@
             <h6>Copyright© 2021 | iMachine® </h4>
         </section>
     </footer>
-
-
     <!-- <SCRIPT>S DE JAVASCRIPT  -->
-    <script src="/app.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 2000,
+        });
+    </script>
 </body>
 
 </html>
