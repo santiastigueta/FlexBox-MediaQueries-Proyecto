@@ -7,8 +7,9 @@
     font-family: sans-serif;
 }
 
-main {
-    width: 100%;
+body {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 
@@ -180,9 +181,6 @@ nav ul ul li {
 }
 
 @media (max-width: 900px) {
-    body.disabledScroll {
-        overflow: hidden;
-    }
     nav ul ul {
         display: none;
     }
@@ -262,9 +260,9 @@ nav ul ul li {
 .que-hacemos-desarrollo h1 {
     color: rgb(255, 255, 255);
     position: absolute;
-    font-size: 5rem;
+    font-size: 4.5rem;
     top: 160px;
-    left: 18%;
+    left: 15%;
     z-index: 1;
 }
 
@@ -301,7 +299,7 @@ nav ul ul li {
     position: absolute;
     font-size: 5rem;
     top: 160px;
-    left: 18%;
+    left: 15%;
     z-index: 1;
 }
 
@@ -491,10 +489,10 @@ svg:not(:root).svg-inline--fa {
 }
 
 .servicios3 article {
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     z-index: -2;
     width: 40%;
-    height: 450px;
+    height: 350px;
     margin-left: 10%;
     margin-right: 3%;
     border-radius: 1rem;
@@ -506,6 +504,8 @@ svg:not(:root).svg-inline--fa {
 }
 
 .sv3-texto ul {
+    list-style: none;
+    width: 300px;
     margin-top: 80px;
 }
 
@@ -546,7 +546,7 @@ svg:not(:root).svg-inline--fa {
     background: linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
     border-top-left-radius: 0%;
     border-top-right-radius: 55%;
-    border-bottom-left-radius: 30%;
+    border-bottom-left-radius: 20%;
     border-bottom-right-radius: 5%;
     margin-bottom: 200px;
     margin-right: 20px;
@@ -622,7 +622,7 @@ svg:not(:root).svg-inline--fa {
     background: linear-gradient(110deg, #23b6bb 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #20c960 70%, #1d975a 70%);
     border-top-left-radius: 10%;
     border-top-right-radius: 30%;
-    border-bottom-left-radius: 30%;
+    border-bottom-left-radius: 10%;
     border-bottom-right-radius: 25%;
     margin-bottom: 250px;
     padding-top: 20px;
@@ -635,6 +635,7 @@ svg:not(:root).svg-inline--fa {
     display: inline-block;
     text-align: center;
     width: 100%;
+    margin-bottom: 40px;
     z-index: 1;
 }
 
@@ -643,7 +644,7 @@ svg:not(:root).svg-inline--fa {
     filter: brightness(0.4);
     width: 100%;
     height: 400px;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .que-hacemos-estrategia h1 {
@@ -806,17 +807,9 @@ svg:not(:root).svg-inline--fa {
 
 /* @media querys*/
 
-@media (max-width: 968px) {
-    body {
-        padding-top: 70px 20px 0;
-    }
-    .footer-col {
-        width: 50%;
-        margin-bottom: 30px;
-    }
-}
+@media (max-width: 968px) {}
 
-@media (max-width: 1170px) {
+@media (max-width: 720px) {
     .que-hacemos-main,
     .que-hacemos-main img {
         max-width: 1170px;
@@ -828,14 +821,6 @@ svg:not(:root).svg-inline--fa {
         margin-top: 35px;
         width: 720px;
     }
-    .que-hacemos-desarrollo h1 {
-        color: rgb(255, 255, 255);
-        position: absolute;
-        font-size: 5rem;
-        top: 160px;
-        left: 10%;
-        z-index: 1;
-    }
     .que-hacemos-agilidad img {
         height: 300px;
         margin-top: 100px;
@@ -843,23 +828,14 @@ svg:not(:root).svg-inline--fa {
     .que-hacemos-agilidad h1 {
         font-size: 35px;
         top: 220px;
-        left: 20%;
+        left: 5%;
     }
     .que-hacemos-agilidad h1::before {
         bottom: -50px;
-    }
-}
-
-@media (min-width: 480px) and (max-width: 1050px) {
-    body {
-        overflow-x: hidden;
+        left: 40%;
     }
     .ppp h4 {
         font-size: 20px;
-    }
-    .servicios {
-        flex-direction: column;
-        left: 10%;
     }
     .que-hacemos-main h1 {
         font-size: 30px;
@@ -873,10 +849,12 @@ svg:not(:root).svg-inline--fa {
     .coaching-imagen img,
     .modelo-operativo-imagen img {
         margin-top: 20px;
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 140px;
+        margin-left: 25px;
     }
     .sv2-texto ul {
+        font-size: 14px;
         margin-top: 50px;
     }
     .servicios2 article {
@@ -884,13 +862,14 @@ svg:not(:root).svg-inline--fa {
         display: flex;
         flex-direction: row;
         width: 90%;
-        height: 250px;
+        height: 200px;
         margin-right: 20px;
         margin-top: 30px;
         border-radius: 1rem;
     }
-    .servicios2 h1 {
-        margin-left: 30px;
+    .servicios2 article h1 {
+        font-size: 20px;
+        margin-left: 0px;
     }
     .que-hacemos-desarrollo {
         position: relative;
@@ -908,12 +887,13 @@ svg:not(:root).svg-inline--fa {
         position: absolute;
         font-size: 30px;
         top: 160px;
-        left: 20%;
+        left: 10%;
     }
     .que-hacemos-desarrollo h1::before {
         left: 35%;
     }
     .servicios {
+        flex-direction: column;
         background-attachment: initial;
         width: 100%;
         height: 140vh;
@@ -921,11 +901,9 @@ svg:not(:root).svg-inline--fa {
     }
     .soporte-rrhh,
     .reclutamiento-it {
-        width: 70%;
+        width: 85%;
+        margin: 10px 0px 10px 0px;
     }
-}
-
-@media (min-width: 480px) and (max-width: 1050px) {
     .servicios3 {
         flex-direction: column;
         width: 100%;
@@ -939,6 +917,8 @@ svg:not(:root).svg-inline--fa {
         height: 170px;
     }
     .sv3-texto ul {
+        font-size: 16px;
+        width: 200px;
         margin-top: 50px;
     }
     .servicios3 article {
@@ -946,11 +926,10 @@ svg:not(:root).svg-inline--fa {
         display: flex;
         flex-direction: row;
         width: 90%;
-        height: 230px;
+        height: 270px;
         margin-right: 20px;
         margin-left: 20px;
-        margin-top: 100px;
-        border-radius: 1rem;
+        margin-top: 0px;
     }
     .servicios3 h1 {
         margin-left: 30px;
@@ -962,14 +941,15 @@ svg:not(:root).svg-inline--fa {
         border-top-right-radius: 30%;
     }
     .que-hacemos-digitalizacion {
-        height: 300px;
+        height: 280px;
     }
     .que-hacemos-digitalizacion img {
-        height: 300px;
+        height: 280px;
         margin-top: 30px;
     }
     .que-hacemos-digitalizacion h1 {
         font-size: 30px;
+        left: 5%;
     }
     .que-hacemos-estrategia {
         position: relative;
@@ -999,5 +979,9 @@ svg:not(:root).svg-inline--fa {
         box-sizing: border-box;
         width: 100px;
         z-index: 1;
+    }
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
     }
 }

@@ -12,7 +12,8 @@
     <title>iMachine</title>
     <style>
         .como-container {
-            padding-top: 115px;
+            padding-top: 117px;
+            margin-bottom: 100px;
         }
         
         .como-trabajamos {
@@ -51,6 +52,7 @@
         
         .como-aside {
             position: static;
+            margin-top: 60px;
             z-index: 10;
         }
         
@@ -60,12 +62,23 @@
         }
         
         .row-aside {
+            margin: 30px 20px 30px 0;
             display: flex;
             flex-direction: row;
         }
         
+        .fa-microscope,
+        .fa-network-wired,
+        .fa-rocket,
+        .fa-laptop-code {
+            width: 50px;
+            height: 50px;
+            margin-left: 30px;
+        }
+        
         .row-aside p {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-left: 20px;
             width: 70%;
         }
         
@@ -101,6 +114,10 @@
             .row-aside p {
                 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                 width: 70%;
+            }
+            .como-container {
+                display: flex;
+                flex-direction: column;
             }
         }
     </style>
@@ -165,25 +182,26 @@
             <h1>¿Cómo trabajamos?</h1>
             <img src="/img/como-trabajamos.jpg" alt="">
         </article>
+
         <aside class="como-aside">
             <div class="row-aside" id="">
-                <img src="/img/explorando.png" alt="">
-                <p><br>Explorando, innovando y co-creando con el cliente el centro del análisis
+                <i class="fas fa-microscope"></i>
+                <p>Explorando, innovando y co-creando con el cliente el centro del análisis
                 </p>
             </div>
             <div class="row-aside" id="">
-                <img src="/img/conectando.png" alt="">
-                <p><br>Conectando cultura, liderazgo y talento con la estrategia del negocio.
+                <i class="fas fa-network-wired"></i>
+                <p>Conectando cultura, liderazgo y talento con la estrategia del negocio.
                 </p>
             </div>
             <div class="row-aside" id="">
-                <img src="/img/integrando-flexibilidad.png" alt="">
-                <p><br>Integrando la flexibilidad y agilidad en todos los procesos.
+                <i class="fas fa-rocket"></i>
+                <p>Integrando la flexibilidad y agilidad en todos los procesos.
                 </p>
             </div>
             <div class="row-aside" id="">
-                <img src="/img/incorporando-tecnologia.png" alt="">
-                <p><br>Incorporando la tecnología como un jugador clave que habilita, potencia y conecta.
+                <i class="fas fa-laptop-code"></i>
+                <p>Incorporando la tecnología como un jugador clave que habilita, potencia y conecta.
                 </p>
             </div>
         </aside>
