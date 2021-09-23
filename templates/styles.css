@@ -464,7 +464,7 @@ nav ul ul li {
 .servicios {
     display: flex;
     justify-content: center;
-    background: url(https://blog.underc0de.org/wp-content/uploads/2021/05/fd.jpg) no-repeat;
+    background: url(https://static.vecteezy.com/system/resources/previews/002/295/443/non_2x/abstract-background-technology-in-the-concept-of-digital-vector.jpg) no-repeat;
     background-attachment: fixed;
     background-size: cover;
     align-items: center;
@@ -510,6 +510,12 @@ nav ul ul li {
     color: rgb(255, 255, 255);
 }
 
+.texto-soporte-rrhh,
+.texto-reclutamiento {
+    padding: 10px 10px 10px 10px;
+    color: rgb(223, 215, 215);
+}
+
 svg:not(:root).svg-inline--fa {
     overflow: visible;
 }
@@ -522,6 +528,7 @@ svg:not(:root).svg-inline--fa {
 
 .reclutamiento-it h1,
 .soporte-rrhh h1 {
+    color: #fff;
     display: flex;
     justify-content: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -545,21 +552,35 @@ svg:not(:root).svg-inline--fa {
 }
 
 .servicios2 article {
-    background-color: rgb(115, 154, 206);
+    background-color: #fff;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 1rem 1rem 1rem 1rem rgba(0, 0, 0, .2);
+    transition: all 0.5s;
+    height: 400px;
     width: 25%;
     margin-left: 3%;
     margin-right: 3%;
     border-radius: 1rem;
+    padding: 1px;
+}
+
+.servicios2 article:hover {
+    border: 1.5px solid #25d366;
 }
 
 .servicios2 article h1 {
-    color: rgb(230, 227, 227);
+    color: rgb(88, 88, 88);
     text-align: center;
     font-size: 25px;
 }
 
 .sv2-texto {
-    color: rgb(230, 227, 227);
+    color: rgb(88, 88, 88);
+}
+
+.sv2-texto ul li {
+    list-style: none;
+    padding: 5px 5px 5px 5px;
 }
 
 .capacitacion-imagen,
@@ -807,7 +828,7 @@ svg:not(:root).svg-inline--fa {
 
 .ppp h4 {
     font-size: 30px;
-    color: #547fc0;
+    color: #5c5c5c;
 }
 
 
@@ -975,8 +996,9 @@ svg:not(:root).svg-inline--fa {
         width: 720px;
     }
     .que-hacemos-agilidad img {
-        height: 300px;
+        height: 280px;
         margin-top: 100px;
+        width: 100%;
     }
     .que-hacemos-agilidad h1 {
         font-size: 35px;
@@ -1001,28 +1023,35 @@ svg:not(:root).svg-inline--fa {
     .facilitacion-imagen img,
     .coaching-imagen img,
     .modelo-operativo-imagen img {
-        margin-top: 20px;
-        width: 180px;
+        margin-top: 10px;
+        width: 140px;
         height: 140px;
-        margin-left: 25px;
+    }
+    .capacitacion-imagen,
+    .facilitacion-imagen,
+    .coaching-imagen,
+    .modelo-operativo-imagen {
+        text-align: center;
+        margin-left: 60px;
+        width: 140px;
+        height: 140px;
     }
     .sv2-texto ul {
         font-size: 14px;
-        margin-top: 50px;
+        margin: 10px 5px 5px 5px;
     }
     .servicios2 article {
-        background-color: rgb(115, 154, 206);
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         width: 90%;
-        height: 200px;
+        height: 350px;
         margin-right: 20px;
         margin-top: 30px;
         border-radius: 1rem;
     }
     .servicios2 article h1 {
-        font-size: 20px;
-        margin-left: 0px;
+        font-size: 25px;
+        margin-top: 20px;
     }
     .que-hacemos-desarrollo {
         position: relative;
@@ -1049,7 +1078,7 @@ svg:not(:root).svg-inline--fa {
         flex-direction: column;
         background-attachment: initial;
         width: 100%;
-        height: 140vh;
+        height: fit-content;
         margin: 0;
     }
     .soporte-rrhh,
