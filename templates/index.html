@@ -73,8 +73,49 @@
                 <h1>Reemplaza ya tus tareas manuales <br> con robots <br> infalibles...</h1>
             </div>
         </div>
-    </main>
 
+        <h2 style="font-size: 20px; color: rgb(88, 88, 88); text-align: center; margin-left: 10%; margin-right: 10%; margin-top: 2%;">Imagina un ejército de robots respaldando a tu equipo de trabajo para lograr la transformación digital de tu negocio</h2>
+
+        <div class="container-index">
+            <div class="row-index">
+                <h1>Transformación digital</h1>
+                <div class="circulo-icono-index">
+                    <i class="fas fa-brain fa-2x"></i>
+                </div>
+                <img src="https://www.distribucionactualidad.com/wp-content/uploads/2018/02/INTELIGENCIA-ARTIFICIAL.jpg" alt="">
+                <p>✔ Rediseñamos los procesos de tu negocio pensando en la compañía que querés ser, en mundo digital e interconectado</p>
+            </div>
+            <div class="row-index">
+                <h1>RPA</h1>
+                <div class="circulo-icono-index">
+                    <i class="fas fa-tasks fa-2x"></i>
+                </div>
+                <img src="https://www.iberdrola.com/wcorp/gc/prod/es_ES/comunicacion/rpa_mult_1_res/RPA_746x419.jpg">
+                <p>✔ Eliminamos los procesos repetitivos que impiden el desarrollo de tu negocio Brindamos la fuerza y precisión de la robótica a tu empresa, para potenciar tu equipo y extender las limitaciones actuales</p>
+            </div>
+            <div class="row-index">
+                <h1>Optimizacion de Procesos</h1>
+                <div class="circulo-icono-index">
+                    <i class="fas fa-chart-bar fa-2x"></i>
+                </div>
+                <img src="https://grupoinmotion.com/wp-content/uploads/2020/12/inteligencia-artificial.jpg" alt="">
+                <p>✔ Integrando la tecnología necesaria al equipo de personas que realizan los procesos, buscando <br>✓ Mejora de performance <br>✓ Fortalecimiento de los controles internos y de gestión</p>
+            </div>
+        </div>
+
+        <div id="slideshow">
+            <div>
+                <img src="/img/metrogas.png">
+            </div>
+            <div>
+                <img src="/img/dvigi.png">
+            </div>
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/2560px-Logo_of_YouTube_%282015-2017%29.svg.png" alt="">
+            </div>
+        </div>
+
+    </main>
     <footer>
         <div class="footer">
             <section class="container-footer">
@@ -135,7 +176,19 @@
 
     <!-- <SCRIPT>S DE JAVASCRIPT  -->
     <script src="/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $("#slideshow > div:gt(0)").hide();
 
+        setInterval(function() {
+            $('#slideshow > div:first')
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo('#slideshow');
+        }, 3000);
+    </script>
 </body>
 
 </html>
