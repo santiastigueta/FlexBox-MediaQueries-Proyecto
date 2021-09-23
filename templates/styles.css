@@ -248,6 +248,7 @@ nav ul ul li {
     z-index: 1;
     background: inherit;
     overflow: hidden;
+    transition: all 1s ease;
 }
 
 .index-main-container::before {
@@ -318,16 +319,8 @@ nav ul ul li {
 
 .row-index h1 {
     font-size: 20px;
-}
-
-.row-index h1::before {
-    content: '';
-    position: absolute;
-    top: 60px;
-    background-color: #42a5c4;
-    height: 1.5px;
-    box-sizing: border-box;
-    width: 50px;
+    color: rgb(88, 88, 88);
+    text-align: center;
 }
 
 .row-index img {
@@ -335,7 +328,13 @@ nav ul ul li {
     height: 200px;
     margin-top: 40px;
     position: relative;
+    transition: all 1s ease;
     z-index: -10;
+}
+
+.row-index img:hover {
+    background-image: url(http://www.gelfuzion.com/img/slides/nivo/bg-1.jpg);
+    filter: brightness(0.5);
 }
 
 .circulo-icono-index {
