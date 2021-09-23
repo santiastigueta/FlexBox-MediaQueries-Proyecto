@@ -173,11 +173,11 @@ nav ul ul li {
 }
 
 #twitter-nav:hover {
-    color: #218be2;
+    color: #5ca3dd;
 }
 
 #linkedin-nav:hover {
-    color: #1e78b9;
+    color: #3a586d;
 }
 
 @media (max-width: 900px) {
@@ -374,7 +374,6 @@ nav ul ul li {
 
 svg:not(:root).svg-inline--fa {
     overflow: visible;
-    width: 50px;
 }
 
 .logo-soporte,
@@ -768,6 +767,24 @@ svg:not(:root).svg-inline--fa {
     padding: 10px 10px;
     width: 100%;
     height: 50px;
+}
+
+.gmail {
+    text-transform: lowercase;
+    margin-left: 10px;
+}
+
+#gmail {
+    display: flex;
+}
+
+.pngtree {
+    text-transform: lowercase;
+    margin-left: 10px;
+}
+
+#pngtree {
+    display: flex;
 }
 
 
