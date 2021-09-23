@@ -1166,4 +1166,58 @@ svg:not(:root).svg-inline--fa {
         width: 50%;
         margin-bottom: 30px;
     }
+    /*--------------*/
+    .index-main {
+        height: 70vh;
+    }
+    .index-main-container {
+        width: 200px;
+        height: 200px;
+        top: 10%;
+        left: 10%;
+    }
+    .index-main-container h1 {
+        font-size: 20px;
+        padding-top: 60px;
+    }
+    /*--------------------------------------------*/
+    .container-index {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10%;
+        width: 100%;
+    }
+    .row-index {
+        padding: 10px 10px 10px 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .row-index img {
+        width: max-content;
+    }
+    .row-index h1 {
+        text-align: center;
+        padding-right: 18%;
+    }
+    .circulo-icono-index {
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+        box-shadow: 0 0 5px rgb(0, 0, 0);
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        margin-top: 40px;
+        margin-left: 30%;
+        border-radius: 50%;
+        z-index: 10;
+    }
+    .fa-tasks,
+    .fa-brain,
+    .fa-chart-bar {
+        margin-top: 30%;
+    }
+    .row-index p {
+        width: 270px;
+    }
 }
