@@ -1191,13 +1191,15 @@ svg:not(:root).svg-inline--fa {
         padding: 10px 10px 10px 10px;
         margin-top: 20px;
         margin-bottom: 20px;
+        margin-left: 5%;
+        width: 90%;
     }
     .row-index img {
         width: max-content;
     }
     .row-index h1 {
         text-align: center;
-        padding-right: 18%;
+        padding-right: 10%;
     }
     .circulo-icono-index {
         display: flex;

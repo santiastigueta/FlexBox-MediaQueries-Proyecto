@@ -8,100 +8,78 @@
     <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
     <title>Document</title>
     <style>
-        .container-index {
+        .container-index2 {
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap;
             justify-content: space-evenly;
+            width: 100%;
         }
         
-        .row-index {
+        .index2-col {
             display: flex;
             flex-direction: column;
-            background-color: #fff;
-            padding: 10px 10px 10px 10px;
-            transition: 0.5s;
-            z-index: 5;
+            justify-content: center;
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            border-right: 1px solid #657990;
+            width: 25%;
+            margin: 20px 0px 20px 0px;
         }
         
-        .row-index:hover {
-            box-shadow: 0 3px 10px #42a5c4;
-        }
-        
-        .row-index h1 {
-            font-size: 20px;
-        }
-        
-        .row-index h1::before {
-            content: '';
-            position: absolute;
-            top: 60px;
-            background-color: #42a5c4;
-            height: 1.5px;
-            box-sizing: border-box;
-            width: 50px;
-        }
-        
-        .row-index img {
-            width: 270px;
-            height: 200px;
-            margin-top: 40px;
-            position: relative;
-            z-index: -10;
-        }
-        
-        .circulo-icono-index {
+        .index2-col img {
             display: flex;
             justify-content: center;
-            background-color: #fff;
-            box-shadow: 0 0 5px rgb(0, 0, 0);
-            position: absolute;
-            width: 80px;
-            height: 80px;
-            margin-top: 40px;
-            margin-left: 98px;
-            border-radius: 50%;
-            z-index: 10;
+            margin-left: 25%;
+            margin-right: 20%;
+            width: 150px;
+            height: 170px;
         }
         
-        .fa-tasks,
-        .fa-brain,
-        .fa-chart-bar {
-            margin-top: 30%;
+        .index2-col p {
+            color: rgb(87, 81, 81);
         }
         
-        .row-index p {
-            width: 270px;
+        .index2-col4 {
+            border-right: 0px;
+        }
+        
+        .index2-col p strong {
+            color: #247291;
+        }
+        
+        .index2-col1 p {
+            content: '';
+            position: relative;
+            left: 34%;
+            background-color: #a01e0d;
+            height: 4px;
+            box-sizing: border-box;
+            width: 100px;
+            z-index: 1;
         }
     </style>
 </head>
 
 <body>
-    <div class="container-index">
-        <div class="row-index">
-            <h1>Transformación digital</h1>
-            <div class="circulo-icono-index">
-                <i class="fas fa-brain fa-2x"></i>
-            </div>
-            <img src="https://www.distribucionactualidad.com/wp-content/uploads/2018/02/INTELIGENCIA-ARTIFICIAL.jpg" alt="">
-            <p>✔ Rediseñamos los procesos de tu negocio pensando en la compañía que querés ser, en mundo digital e interconectado</p>
+    <h1 style="text-align: center;">Nuestros servicios</h1>
+    <div class="container-index2">
+        <div class="index2-col index2-col1">
+            <img src="/img/partnership.png" alt="">
+            <p> <strong>✓</strong> Partnership estratégico para el CIO. Coaching, Plan estratégico de sistemas</p>
         </div>
-        <div class="row-index">
-            <h1>RPA</h1>
-            <div class="circulo-icono-index">
-                <i class="fas fa-tasks fa-2x"></i>
-            </div>
-            <img src="https://www.iberdrola.com/wcorp/gc/prod/es_ES/comunicacion/rpa_mult_1_res/RPA_746x419.jpg">
-            <p>✔ Eliminamos los procesos repetitivos que impiden el desarrollo de tu negocio Brindamos la fuerza y precisión de la robótica a tu empresa, para potenciar tu equipo y extender las limitaciones actuales</p>
+        <div class="index2-col index2-col2">
+            <img src="/img/diseño-estructura-it.png" alt="">
+            <p> <strong>✓</strong> Diseño de estructura de IT. Organización + moderna y digital</p>
         </div>
-        <div class="row-index">
-            <h1>Optimizacion de Procesos</h1>
-            <div class="circulo-icono-index">
-                <i class="fas fa-chart-bar fa-2x"></i>
-            </div>
-            <img src="https://grupoinmotion.com/wp-content/uploads/2020/12/inteligencia-artificial.jpg" alt="">
-            <p>✔ Integrando la tecnología necesaria al equipo de personas que realizan los procesos, buscando <br>✓ Mejora de performance <br>✓ Fortalecimiento de los controles internos y de gestión</p>
+        <div class="index2-col index2-col3">
+            <img src="/img/implementacion-proceso-it.png" alt="">
+            <p> <strong>✓</strong> Implementación de procesos de IT. Modelo Operativo de IT</p>
         </div>
+        <div class="index2-col index2-col4">
+            <img src="/img/arquitectura-aplicaciones.png" alt="">
+            <p> <strong>✓</strong> Arquitectura de aplicaciones e Infra. CTO as a service</p>
+        </div>
+
     </div>
 </body>
 

@@ -79,40 +79,33 @@
         }
         
         @media (max-width: 720px) {
-            .footer-col {
-                width: 50%;
-                margin-bottom: 30px;
-            }
-            .nuestro-equipo {
-                height: 400px;
+            .qn-sm-contenedor img {
+                height: 300px;
             }
             .qn-sm-contenedor h1 {
-                font-size: 3.2rem;
+                font-size: 2rem;
                 top: 30%;
                 left: 20%;
             }
-            .mundo-container {
-                width: 100%;
-            }
             .mundo-column>img {
                 width: 200px;
-            }
-            .mundo-column {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                font-size: 12px;
+                display: none;
             }
             .mundo-column-izq {
                 right: 50%;
             }
             .mundo-column>p {
-                background-color: rgb(71 95 125);
+                background-color: rgb(71 163 94);
+                box-shadow: 1rem 1rem 1rem 0 rgba(0, 0, 0, .2);
                 color: white;
+                position: relative;
+                display: flex;
+                font-size: 15px;
+                width: 80%;
+                height: 120px;
                 border-radius: 1rem;
                 margin: 10px 10px;
             }
-            /*-----------*/
             .qn-sm-contenedor h1 {
                 font-size: 40px;
                 left: 20%;
@@ -123,13 +116,12 @@
             .nuestro-equipo {
                 height: 350px;
             }
-            /* ----- SECCION DE MUNDO -------*/
             .mundo-container {
                 display: flex;
                 justify-content: center;
-            }
-            .mundo-column>img {
-                width: 190px;
+                margin-top: 10%;
+                margin-bottom: 10%;
+                width: 100%;
             }
             .mundo-column {
                 display: flex;
@@ -137,15 +129,6 @@
                 justify-content: space-around;
                 margin: 0;
                 font-size: 12px;
-            }
-            .mundo-column-izq {
-                right: 50%;
-            }
-            .mundo-column>p {
-                background-color: rgb(71 95 125);
-                color: white;
-                border-radius: 1rem;
-                padding: 5px 5px;
             }
         }
     </style>
