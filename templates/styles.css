@@ -1100,7 +1100,7 @@ svg:not(:root).svg-inline--fa {
     }
     .sv3-texto ul {
         font-size: 16px;
-        width: 200px;
+        width: 180px;
         margin-top: 50px;
     }
     .servicios3 article {
@@ -1195,7 +1195,7 @@ svg:not(:root).svg-inline--fa {
         width: 90%;
     }
     .row-index img {
-        width: max-content;
+        width: 200px;
     }
     .row-index h1 {
         text-align: center;
