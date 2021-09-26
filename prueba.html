@@ -47,15 +47,28 @@
             color: #247291;
         }
         
-        .index2-col1 p {
-            content: '';
-            position: relative;
-            left: 34%;
-            background-color: #a01e0d;
-            height: 4px;
-            box-sizing: border-box;
-            width: 100px;
-            z-index: 1;
+        @media (max-width:720px) {
+            .container-index2 {
+                flex-direction: column;
+                justify-content: center;
+            }
+            .index2-col {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                background-color: rgb(255, 255, 255);
+                border-right: 0;
+                border-bottom: 1px solid #657990;
+                width: 100%;
+                margin: 20px 0px 20px 0px;
+            }
+            .index2-col img {
+                display: flex;
+                justify-content: center;
+                margin-left: 30%;
+                width: 150px;
+                height: 170px;
+            }
         }
     </style>
 </head>
