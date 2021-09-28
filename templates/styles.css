@@ -423,12 +423,13 @@ nav ul ul li {
     background-color: #fff;
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
     padding: 10px 10px 10px 10px;
-    margin: 6% 5%;
+    margin: 0% 5%;
     width: 50%;
 }
 
 .right-slideshow p {
     color: #535353;
+    margin-top: 90px;
     width: fit-content;
 }
 
@@ -440,8 +441,8 @@ nav ul ul li {
 .right-slideshow h1::before {
     content: '';
     position: absolute;
-    left: 45%;
-    bottom: -80px;
+    left: 15%;
+    bottom: 160px;
     background-color: #a01e0d;
     height: 4px;
     width: 100px;
@@ -933,6 +934,11 @@ svg:not(:root).svg-inline--fa {
     margin: auto;
 }
 
+.container-footer {
+    display: flex;
+    flex-direction: row;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -1191,7 +1197,7 @@ svg:not(:root).svg-inline--fa {
     }
     .sv3-texto ul {
         font-size: 16px;
-        width: 180px;
+        width: 170px;
         margin-top: 50px;
     }
     .servicios3 article {
@@ -1222,7 +1228,11 @@ svg:not(:root).svg-inline--fa {
     }
     .que-hacemos-digitalizacion h1 {
         font-size: 30px;
-        left: 5%;
+        top: 40%;
+        left: 0%;
+    }
+    .que-hacemos-digitalizacion h1::before {
+        bottom: -40px;
     }
     .que-hacemos-estrategia {
         position: relative;
@@ -1237,9 +1247,9 @@ svg:not(:root).svg-inline--fa {
     .que-hacemos-estrategia h1 {
         color: rgb(255, 255, 255);
         position: absolute;
-        font-size: 40px;
+        font-size: 35px;
         top: 160px;
-        left: 20%;
+        left: 16%;
         z-index: 1;
     }
     .que-hacemos-estrategia h1::before {
@@ -1253,9 +1263,15 @@ svg:not(:root).svg-inline--fa {
         width: 100px;
         z-index: 1;
     }
+    .container-footer {
+        flex-direction: column;
+    }
     .footer-col {
-        width: 50%;
-        margin-bottom: 30px;
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    .row {
+        flex-direction: column;
     }
     /*--------------*/
     .index-main {
@@ -1342,6 +1358,16 @@ svg:not(:root).svg-inline--fa {
         width: 100%;
         padding: 20px 10px 20px 10px;
         margin: 0;
+    }
+    .right-slideshow h1::before {
+        content: '';
+        position: absolute;
+        left: 15%;
+        bottom: 200px;
+        background-color: #a01e0d;
+        height: 4px;
+        width: 100px;
+        z-index: 1;
     }
     #slideshow {
         display: none;
