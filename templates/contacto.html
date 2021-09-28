@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="shortcut icon" href="/img/iMachine-icono.ico">
     <script defer src="/app.js"></script>
     <style>
@@ -69,7 +70,7 @@
             position: absolute;
             font-size: 5rem;
             margin-top: 100px;
-            left: 10%;
+            margin-left: 100px;
             z-index: 1;
         }
         
@@ -90,6 +91,44 @@
             box-sizing: border-box;
             width: 100px;
             z-index: 1;
+        }
+        
+        .textarea {
+            padding: 5px 5px 5px 5px;
+        }
+        
+        .send {
+            width: 60px;
+            height: 30px;
+            font-size: 15px;
+        }
+        
+        @media (max-width:720px) {
+            .conozcamonos {
+                position: relative;
+                display: inline-block;
+                text-align: center;
+                width: 100%;
+                z-index: 1;
+            }
+            .conozcamonos h1 {
+                color: rgb(255, 255, 255);
+                position: absolute;
+                font-size: 2.5rem;
+                left: 10%;
+                top: 150px;
+                z-index: 1;
+            }
+            .conozcamonos h1::before {
+                left: 25%;
+                bottom: -40px;
+            }
+            .conozcamonos img {
+                background-image: url(http://www.gelfuzion.com/img/slides/nivo/bg-1.jpg);
+                filter: brightness(0.4);
+                width: 100%;
+                height: 300px;
+            }
         }
     </style>
     <title>iMachine</title>
@@ -156,7 +195,7 @@
         </section>
 
         <section class="formulario">
-            <article class="contactanos">
+            <article class="contactanos" data-aos="fade-right">
                 <h1>Contáctanos</h1>
                 <img src="/img/contactanos.jpg" alt="">
             </article>
@@ -166,9 +205,9 @@
                     <label for="empresa">Empresa:</label><br><input size="50" type="text" name="empresa" placeholder="Ingrese el nombre de su empresa aqui..."> <br><br>
                     <label for="cargo">Cargo:</label><br><input size="50" type="text" name="cargo" placeholder="Ingrese su cargo aqui..."> <br><br>
                     <label for="email">Email:</label><br><input size="50" type="text" name="email" placeholder="Ingrese su mail aqui..."> <br><br>
-                    <label for="comentarios">Mensaje:</label><br><textarea name="mensaje" rows="7" cols="53" placeholder="Déjenos su mensaje aqui..."></textarea>
+                    <label for="comentarios">Mensaje:</label><br><textarea name="mensaje" rows="7" cols="53" placeholder="Déjenos su mensaje aqui..." class="textarea"></textarea>
                     <br><br>
-                    <input type="submit" value="Enviar">
+                    <input type="submit" value="Enviar" class="send">
                 </form>
 
             </aside>
