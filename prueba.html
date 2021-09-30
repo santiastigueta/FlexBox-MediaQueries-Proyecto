@@ -5,94 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
     <title>Document</title>
-    <style>
-        .container-index2 {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            width: 100%;
-        }
-        
-        .index2-col {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            background-color: rgb(255, 255, 255);
-            border-right: 1px solid #657990;
-            width: 25%;
-            margin: 20px 0px 20px 0px;
-        }
-        
-        .index2-col img {
-            display: flex;
-            justify-content: center;
-            margin-left: 25%;
-            margin-right: 20%;
-            width: 150px;
-            height: 170px;
-        }
-        
-        .index2-col p {
-            color: rgb(87, 81, 81);
-        }
-        
-        .index2-col4 {
-            border-right: 0px;
-        }
-        
-        .index2-col p strong {
-            color: #247291;
-        }
-        
-        @media (max-width:720px) {
-            .container-index2 {
-                flex-direction: column;
-                justify-content: center;
-            }
-            .index2-col {
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                background-color: rgb(255, 255, 255);
-                border-right: 0;
-                border-bottom: 1px solid #657990;
-                width: 100%;
-                margin: 20px 0px 20px 0px;
-            }
-            .index2-col img {
-                display: flex;
-                justify-content: center;
-                margin-left: 30%;
-                width: 150px;
-                height: 170px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="/carousel.css">
+
 </head>
 
 <body>
-    <h1 style="text-align: center;">Nuestros servicios</h1>
-    <div class="container-index2">
-        <div class="index2-col index2-col1">
-            <img src="/img/partnership.png" alt="">
-            <p> <strong>✓</strong> Partnership estratégico para el CIO. Coaching, Plan estratégico de sistemas</p>
+    <div class="slider">
+        <div class="slide-track">
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+            </div>
         </div>
-        <div class="index2-col index2-col2">
-            <img src="/img/diseño-estructura-it.png" alt="">
-            <p> <strong>✓</strong> Diseño de estructura de IT. Organización + moderna y digital</p>
-        </div>
-        <div class="index2-col index2-col3">
-            <img src="/img/implementacion-proceso-it.png" alt="">
-            <p> <strong>✓</strong> Implementación de procesos de IT. Modelo Operativo de IT</p>
-        </div>
-        <div class="index2-col index2-col4">
-            <img src="/img/arquitectura-aplicaciones.png" alt="">
-            <p> <strong>✓</strong> Arquitectura de aplicaciones e Infra. CTO as a service</p>
-        </div>
-
     </div>
 </body>
 

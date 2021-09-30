@@ -11,46 +11,11 @@
     <link rel="shortcut icon" href="/img/iMachine-icono.ico">
     <script defer src="/app.js"></script>
     <style>
-        .conozcamonos {
-            position: relative;
-            display: inline-block;
-            text-align: center;
-            width: 100%;
-            z-index: 1;
-        }
-        
-        .conozcamonos h1 {
-            color: rgb(255, 255, 255);
-            position: absolute;
-            font-size: 5rem;
-            top: 150px;
-            left: 30%;
-            z-index: 1;
-        }
-        
-        .conozcamonos h1::before {
-            content: '';
-            position: absolute;
-            left: 45%;
-            bottom: -80px;
-            background-color: #a01e0d;
-            height: 4px;
-            box-sizing: border-box;
-            width: 100px;
-            z-index: 1;
-        }
-        
-        .conozcamonos img {
-            background-image: url(http://www.gelfuzion.com/img/slides/nivo/bg-1.jpg);
-            filter: brightness(0.4);
-            width: 100%;
-            height: 500px;
-        }
         /* FORMULARIO */
         
         .formulario {
             display: table;
-            margin-top: 5%;
+            padding-top: 117px;
             margin-bottom: 5%;
             width: 100%
         }
@@ -62,7 +27,8 @@
         
         .contactanos-aside {
             float: right;
-            width: 35%
+            width: 35%;
+            margin-top: 2%;
         }
         
         .contactanos h1 {
@@ -104,31 +70,18 @@
         }
         
         @media (max-width:720px) {
-            .conozcamonos {
-                position: relative;
-                display: inline-block;
-                text-align: center;
-                width: 100%;
-                z-index: 1;
-            }
             .conozcamonos h1 {
-                color: rgb(255, 255, 255);
-                position: absolute;
                 font-size: 2.5rem;
                 left: 10%;
-                top: 150px;
-                z-index: 1;
             }
             .conozcamonos h1::before {
                 left: 25%;
                 bottom: -40px;
             }
             .conozcamonos img {
-                background-image: url(http://www.gelfuzion.com/img/slides/nivo/bg-1.jpg);
-                filter: brightness(0.4);
-                width: 100%;
                 height: 300px;
             }
+            .contactanos {}
         }
     </style>
     <title>iMachine</title>
@@ -159,7 +112,7 @@
                         <ul>
                             <li><a href="que-hacemos.html?key1=value1&key2=value2#desarrollo">Desarrollo</a></li>
                             <li><a href="que-hacemos.html?key1=value1&key2=value2#agilidad">Agilidad</a></li>
-                            <li><a href="que-hacemos.html?key1=value1&key2=value2#digitalizacion">Digitalizacion</a></li>
+                            <li><a href="que-hacemos.html?key1=value1&key2=value2#digitalizacion">RPA</a></li>
                             <li><a href="que-hacemos.html?key1=value1&key2=value2#estrategia">Transformacion</a></li>
                         </ul>
                     </li>
@@ -188,11 +141,6 @@
         </nav>
     </header>
     <main>
-        <section class="conozcamonos">
-            <h1>Conozcámonos</h1>
-            <img src="/img/conozcamonos.jpg">
-            <h2 style="color:rgb(109, 116, 116); margin-top: 20px;">Somos una compañía de consultoría en transformación de negocios, con un estilo ágil, innovador y flexible. </h2>
-        </section>
 
         <section class="formulario">
             <article class="contactanos" data-aos="fade-right">
@@ -212,7 +160,7 @@
 
             </aside>
         </section>
-
+        <h2 style="color:rgb(109, 116, 116); margin: 20px; text-align: center;">Somos una compañía de consultoría en transformación de negocios, con un estilo ágil, innovador y flexible. </h2>
 
     </main>
     <footer>

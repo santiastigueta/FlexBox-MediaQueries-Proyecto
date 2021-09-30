@@ -226,52 +226,93 @@ nav ul ul li {
 
 /* <<<<<----CUERPO DE PAGINA  INDEX---->>>>*/
 
-.index-main {
-    display: flex;
-    justify-content: center;
-    background: url(https://nuteducacion.com.ar/wp-content/uploads/2020/04/machine-learning.jpg) no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    align-items: center;
-    width: 100%;
-    height: 90vh;
-}
-
-.index-main-container {
-    width: 300px;
-    height: 300px;
-    top: 10%;
-    left: 20%;
-    border-radius: 50%;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+.carousel-wrapper {
+    height: 400px;
     position: relative;
-    z-index: 1;
-    background: inherit;
-    overflow: hidden;
-    transition: all 1s ease;
+    width: 800px;
+    margin: 0 auto;
 }
 
-.index-main-container::before {
-    content: "";
+.carousel-item {
     position: absolute;
-    background: inherit;
-    z-index: -1;
     top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
-    bottom: 0;
-    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-    filter: blur(10px);
-    margin: -20px;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
 }
 
-.index-main-container h1 {
-    color: #ebe9e8;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    display: flex;
-    font-size: 30px;
-    padding-top: 80px;
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+}
+
+.arrow-prev {
+    left: -30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.arrow-next {
+    right: -30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.light {
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .arrow,
+    .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+    }
+}
+
+
+/*Select every element*/
+
+[id^="item"] {
+    display: none;
+}
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+    background: url('https://static.pexels.com/photos/6526/sea-beach-holiday-vacation-large.jpg');
+    background-size: cover;
+}
+
+.item-2 {
+    background: url('https://static.pexels.com/photos/6506/alcohol-bar-drinks-party-large.jpg');
+    background-size: cover;
+}
+
+.item-3 {
+    background: url('https://static.pexels.com/photos/6529/lake-kajak-kayak-large.jpg');
+    background-size: cover;
+}
+
+*:target~.item-1 {
+    opacity: 0;
+}
+
+#item-1:target~.item-1 {
+    opacity: 1;
+}
+
+#item-2:target~.item-2,
+#item-3:target~.item-3 {
+    z-index: 3;
+    opacity: 1;
 }
 
 .container-index {
@@ -337,6 +378,10 @@ nav ul ul li {
 
 .row-index p {
     width: 270px;
+}
+
+.row-index p strong {
+    color: #516fa2;
 }
 
 .container-index2 {
@@ -722,164 +767,6 @@ svg:not(:root).svg-inline--fa {
     z-index: 1;
 }
 
-.consultoria-imagen img,
-.fabrica-imagen img,
-.operacion-imagen img {
-    width: 350px;
-    height: 280px;
-    margin-left: 85px;
-    border-radius: 1rem;
-    z-index: -1;
-}
-
-.servicios3 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.servicios3 article {
-    background-color: #fff;
-    z-index: -2;
-    width: 40%;
-    height: 350px;
-    margin-left: 10%;
-    margin-right: 3%;
-    border-radius: 1rem;
-    margin-top: 30px;
-}
-
-.sv3-texto {
-    color: rgb(0, 0, 0);
-}
-
-.sv3-texto ul {
-    list-style: none;
-    width: 300px;
-    margin-top: 80px;
-}
-
-.consultoria-imagen,
-.fabrica-imagen,
-.operacion-imagen {
-    width: 150px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-}
-
-.consultoria {
-    display: flex;
-    flex-direction: row;
-}
-
-.consultoria section h1 {
-    color: rgb(67, 69, 216);
-    background-color: rgb(255, 255, 255);
-    border: 3px ridge rgb(67, 69, 216);
-    text-align: center;
-    font-size: 25px;
-    z-index: 10;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 20rem;
-}
-
-.consultoria-texto ul {
-    color: rgb(0, 0, 0);
-    color: #fff;
-    background: -webkit-linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), -webkit-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
-    background: -o-linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), -o-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
-    background: -moz-linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), -moz-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
-    background: linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
-    border-top-left-radius: 0%;
-    border-top-right-radius: 55%;
-    border-bottom-left-radius: 20%;
-    border-bottom-right-radius: 5%;
-    margin-bottom: 200px;
-    margin-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 18px;
-    font-size: 25px;
-}
-
-.fabrica {
-    display: flex;
-    flex-direction: row;
-    padding-left: 50%;
-}
-
-.fabrica section h1 {
-    color: rgb(67, 69, 216);
-    background-color: rgb(255, 255, 255);
-    border: 3px ridge rgb(67, 69, 216);
-    text-align: center;
-    font-size: 25px;
-    z-index: 10;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 20rem;
-}
-
-.fabrica-texto ul {
-    color: rgb(0, 0, 0);
-    color: #fff;
-    background: -webkit-linear-gradient(110deg, #3299df 40%, rgba(0, 0, 0, 0) 30%), -webkit-radial-gradient(farthest-corner at 0% 0%, #543ea5 70%, #1376af 70%);
-    background: -o-linear-gradient(110deg, #437fda 40%, rgba(0, 0, 0, 0) 30%), -o-radial-gradient(farthest-corner at 0% 0%, #547fc0 70%, #113596 70%);
-    background: -moz-linear-gradient(110deg, #417abb 40%, rgba(0, 0, 0, 0) 30%), -moz-radial-gradient(farthest-corner at 0% 0%, #527ba1 70%, #1787e2 70%);
-    background: linear-gradient(110deg, #1493b9 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #1b5392 70%, #59b5cc 70%);
-    border-top-left-radius: 30%;
-    border-top-right-radius: 0%;
-    border-bottom-left-radius: 30%;
-    border-bottom-right-radius: 25%;
-    margin-bottom: 200px;
-    margin-right: 20px;
-    padding-top: 20px;
-    width: 300px;
-    padding-bottom: 18px;
-    font-size: 25px;
-}
-
-.operacion {
-    display: flex;
-    flex-direction: row;
-}
-
-.operacion section h1 {
-    color: rgb(67, 69, 216);
-    background-color: rgb(255, 255, 255);
-    border: 3px ridge rgb(67, 69, 216);
-    text-align: center;
-    font-size: 25px;
-    z-index: 10;
-    margin-left: 30px;
-    margin-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 20rem;
-}
-
-.operacion-texto ul {
-    color: rgb(0, 0, 0);
-    color: #fff;
-    background: -webkit-linear-gradient(110deg, #2c9188 40%, rgba(0, 0, 0, 0) 30%), -webkit-radial-gradient(farthest-corner at 0% 0%, #15adb8 70%, #62e0da 70%);
-    background: -o-linear-gradient(110deg, #238363 40%, rgba(0, 0, 0, 0) 30%), -o-radial-gradient(farthest-corner at 0% 0%, #17f09d 70%, #113596 70%);
-    background: -moz-linear-gradient(110deg, #1ccc89 40%, rgba(0, 0, 0, 0) 30%), -moz-radial-gradient(farthest-corner at 0% 0%, #48a38d 70%, #22bda8 70%);
-    background: linear-gradient(110deg, #23b6bb 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #20c960 70%, #1d975a 70%);
-    border-top-left-radius: 10%;
-    border-top-right-radius: 30%;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 25%;
-    margin-bottom: 250px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    font-size: 25px;
-}
-
 .que-hacemos-estrategia {
     position: relative;
     display: inline-block;
@@ -921,6 +808,59 @@ svg:not(:root).svg-inline--fa {
 .ppp h4 {
     font-size: 30px;
     color: #5c5c5c;
+}
+
+.servicios4 {
+    background-color: #fff;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60vh;
+}
+
+.servicios4-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 10%;
+    width: 50%;
+}
+
+.servicios4-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 10%;
+}
+
+.servicios4-item p {
+    margin-right: 70px;
+    margin-left: 5%;
+}
+
+#servicio4Icon {
+    color: #597bb8;
+}
+
+@media (max-width:720px) {
+    .servicios4 {
+        flex-direction: column;
+        height: fit-content;
+    }
+    .servicios4-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .servicios4-item p {
+        margin-left: 5%;
+    }
+    #servicios4-row-right {
+        border-top: 1px solid #1ba761;
+        padding-top: 20px;
+    }
 }
 
 
@@ -1041,6 +981,14 @@ svg:not(:root).svg-inline--fa {
 
 #pngtree {
     display: flex;
+}
+
+#location {
+    display: flex;
+}
+
+.location {
+    margin-left: 10px;
 }
 
 
@@ -1181,6 +1129,7 @@ svg:not(:root).svg-inline--fa {
     .soporte-rrhh,
     .reclutamiento-it {
         width: 85%;
+        height: fit-content;
         margin: 10px 0px 10px 0px;
     }
     .servicios3 {
@@ -1272,20 +1221,6 @@ svg:not(:root).svg-inline--fa {
     }
     .row {
         flex-direction: column;
-    }
-    /*--------------*/
-    .index-main {
-        height: 70vh;
-    }
-    .index-main-container {
-        width: 200px;
-        height: 200px;
-        top: 10%;
-        left: 10%;
-    }
-    .index-main-container h1 {
-        font-size: 20px;
-        padding-top: 60px;
     }
     /*--------------------------------------------*/
     .container-index {
