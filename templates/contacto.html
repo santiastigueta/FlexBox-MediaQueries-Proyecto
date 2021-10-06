@@ -22,6 +22,18 @@
         
         textarea {
             width: 370px;
+            border-radius: 5px;
+        }
+        
+        label {
+            font-size: 15px;
+        }
+        
+        input {
+            border: 1px solid white;
+            border-bottom: 1px solid rgb(70, 70, 70);
+            padding: 5px;
+            margin-top: 5px;
         }
         
         .contactanos {
@@ -70,9 +82,18 @@
         }
         
         .send {
-            width: 60px;
-            height: 30px;
+            width: 80px;
+            height: 34px;
             font-size: 15px;
+            border-radius: 5px;
+            background-color: #007bff;
+            border: #007bff;
+            color: #fff;
+        }
+        
+        .send:hover {
+            background-color: #a01e0d;
+            transition: 1s;
         }
         
         @media (max-width:720px) {
@@ -84,7 +105,7 @@
             }
             .contactanos-aside {
                 float: bottom;
-                width: 100%;
+                width: 95%;
                 margin-top: 20%;
             }
             .contactanos h1 {
@@ -169,11 +190,11 @@
             </article>
             <aside class="contactanos-aside">
                 <form action="mailto:santiasti0906@gmail.com" method="post" enctype="text/plain">
-                    <label for="name">Nombre y Apellido:</label><br><input size="50" type="text" name="name" placeholder="Ingrese su nombre y apellido aqui..."> <br><br>
-                    <label for="empresa">Empresa:</label><br><input size="50" type="text" name="empresa" placeholder="Ingrese el nombre de su empresa aqui..."> <br><br>
-                    <label for="cargo">Cargo:</label><br><input size="50" type="text" name="cargo" placeholder="Ingrese su cargo aqui..."> <br><br>
-                    <label for="email">Email:</label><br><input size="50" type="text" name="email" placeholder="Ingrese su mail aqui..."> <br><br>
-                    <label for="comentarios">Mensaje:</label><br><textarea name="mensaje" rows="7" cols="53" placeholder="Déjenos su mensaje aqui..." class="textarea"></textarea>
+                    <label for="name">Nombre y Apellido:</label><br><input size="40" type="text" name="name" placeholder="Ingrese su nombre y apellido aqui..."> <br><br>
+                    <label for="empresa">Empresa:</label><br><input size="40" type="text" name="empresa" placeholder="Ingrese el nombre de su empresa aqui..."> <br><br>
+                    <label for="cargo">Cargo:</label><br><input size="40" type="text" name="cargo" placeholder="Ingrese su cargo aqui..."> <br><br>
+                    <label for="email">Email:</label><br><input size="40" type="text" name="email" placeholder="Ingrese su mail aqui..."> <br><br>
+                    <label for="comentarios">Mensaje:</label><br><textarea name="mensaje" rows="7" cols="53" placeholder="Déjenos su mensaje..." class="textarea"></textarea>
                     <br><br>
                     <input type="submit" value="Enviar" class="send">
                 </form>
