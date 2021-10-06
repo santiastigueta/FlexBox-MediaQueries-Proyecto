@@ -8,10 +8,107 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./indexCarousel.css">
     <link rel="shortcut icon" href="/img/iMachine-icono.ico">
     <script defer src="/app.js"></script>
     <title>iMachine</title>
-
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Verdana, sans-serif;
+        }
+        
+        .mySlides {
+            display: none;
+        }
+        
+        .mySlides img {
+            vertical-align: middle;
+            background-image: url(http://www.gelfuzion.com/img/slides/nivo/bg-1.jpg);
+            filter: brightness(0.5);
+            width: max-content;
+            height: 600px;
+        }
+        /* Slideshow container */
+        
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+        /* Caption text */
+        
+        .text {
+            color: #f2f2f2;
+            font-size: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 30px 100px;
+            position: absolute;
+            bottom: 35%;
+            width: 100%;
+            text-align: center;
+        }
+        /* Number text (1/3 etc) */
+        
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        /* The dots/bullets/indicators */
+        
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        
+        .active {
+            background-color: #717171;
+        }
+        /* Fading animation */
+        
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 3s;
+            animation-name: fade;
+            animation-duration: 3s;
+        }
+        
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        /* On smaller screens, decrease text size */
+        
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -69,30 +166,39 @@
 
     <!-- CUERPO DE PAGINA -->
     <main>
-        <div class="carousel-wrapper">
-            <span id="item-1"></span>
-            <span id="item-2"></span>
-            <span id="item-3"></span>
-            <div class="carousel-item item-1">
-                <h2>Item 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus accumsan pretium dolor vel convallis. Aliquam erat volutpat. Maecenas lacus nunc, imperdiet sed mi et, finibus suscipit mi.</p>
-                <a class="arrow arrow-prev" href="#item-3"></a>
-                <a class="arrow arrow-next" href="#item-2"></a>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="https://revistadigital.inesem.es/gestion-empresarial/files/2017/06/Fotolia_57608866_Subscription_Monthly_XXL-1024x683.jpg" style="width:100%">
+                <div class="text">DISEÑAMOS SOLUCIONES PARA DESARROLLAR LA ORGANIZACION</div>
             </div>
 
-            <div class="carousel-item item-2">
-                <h2>Item 2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus accumsan pretium dolor vel convallis. Aliquam erat volutpat.</p>
-                <a class="arrow arrow-prev" href="#item-1"></a>
-                <a class="arrow arrow-next" href="#item-3"></a>
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="https://educacion-ejecutiva.utec.edu.pe/sites/default/files/blog/utec_18_noviembre_blog_1.jpg" style="width:100%">
+                <div class="text">ACOMPAÑAMOS EL CAMINO HACIA LA AGILIDAD EMPRESARIAL</div>
             </div>
 
-            <div class="carousel-item item-3">
-                <h2>Item 3</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus accumsan pretium dolor vel convallis. Aliquam erat volutpat.</p>
-                <a class="arrow arrow-prev" href="#item-2"></a>
-                <a class="arrow arrow-next" href="#item-1"></a>
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="https://www.lavanguardia.com/files/og_thumbnail/uploads/2018/05/19/5fa4336fad576.jpeg" style="width:100%">
+                <div class="text">NOS ESPECIALIZAMOS EN FUERZA DE TRABAJO DIGITAL (RPA)</div>
             </div>
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="https://itmastersmag.com/wp-content/uploads/2018/11/shutterstock_373227619-e1542810126529.jpg" style="width:100%">
+                <div class="text">SOMOS ALIADOS PARA LA GESTION DEL EQUIPO DE IT</div>
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
         </div>
 
     </main>
@@ -117,7 +223,7 @@
                     <div class="footer-col">
                         <h4>Sobre Nosotros</h4>
                         <ul class="lista-footer" id="footer-logo">
-                            <img src="/img/imachine-logo-principal.png" height="50" width="100" alt="" />
+                            <img src="/img/imachine-logo-principal.png" height="60" width="120" alt="" />
                             <p style="color: #b6b6b6;">Consultora especializada en Transformación y Digitalización, Centrada en el Cliente + Personas + Procesos + Agilidad + Tecnología Exponencial.
                             </p>
                         </ul>
@@ -173,10 +279,34 @@
 
 
     <!-- <SCRIPT>S DE JAVASCRIPT  -->
+    <script src="./indexCarousel.js"></script>
     <script src="/app.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 6000);
+        }
     </script>
 </body>
 
