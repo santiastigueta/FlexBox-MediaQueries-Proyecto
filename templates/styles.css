@@ -310,7 +310,7 @@
             position: absolute;
             left: 15%;
             top: 320px;
-            background-color: #a01e0d;
+            background-color: rgb(37 211 102);
             height: 4px;
             width: 100px;
             z-index: 1;
@@ -348,7 +348,6 @@
         
         .que-hacemos-desarrollo h1 {
             color: rgb(255, 255, 255);
-            font-family: Ethnocentric-Rg;
             position: absolute;
             font-size: 4.5rem;
             top: 160px;
@@ -361,7 +360,7 @@
             position: absolute;
             left: 45%;
             bottom: -80px;
-            background-color: #a01e0d;
+            background-color: rgb(37 211 102);
             height: 4px;
             box-sizing: border-box;
             width: 100px;
@@ -398,7 +397,7 @@
             position: absolute;
             left: 45%;
             bottom: -80px;
-            background-color: #a01e0d;
+            background-color: rgb(37 211 102);
             height: 4px;
             box-sizing: border-box;
             width: 100px;
@@ -611,7 +610,7 @@
             position: absolute;
             left: 45%;
             bottom: -80px;
-            background-color: #a01e0d;
+            background-color: rgb(37 211 102);
             height: 4px;
             box-sizing: border-box;
             width: 100px;
@@ -1100,7 +1099,6 @@
                 position: absolute;
                 left: 15%;
                 bottom: 200px;
-                background-color: #a01e0d;
                 height: 4px;
                 width: 100px;
                 z-index: 1;
