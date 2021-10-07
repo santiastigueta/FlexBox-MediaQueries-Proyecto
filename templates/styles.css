@@ -170,14 +170,6 @@
             list-style: none;
         }
         
-        #twitter-nav:hover {
-            color: #5ca3dd;
-        }
-        
-        #linkedin-nav:hover {
-            color: #3a586d;
-        }
-        
         @media (max-width: 900px) {
             nav ul ul {
                 display: none;
@@ -433,6 +425,122 @@
         }
         /* <<<<<---- fin CUERPO DE PAGINA  INDEX---->>>>*/
         /* <<<<<----inicio CUERPO DE PAGINA  QUIENES-SOMOS ---->>>>*/
+        
+        .qn-sm-contenedor {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+            z-index: 1;
+        }
+        
+        .qn-sm-contenedor h1 {
+            color: rgb(255, 255, 255);
+            position: absolute;
+            font-size: 5rem;
+            top: 150px;
+            left: 30%;
+            z-index: 1;
+        }
+        
+        .qn-sm-contenedor h1::before {
+            content: '';
+            position: absolute;
+            left: 40%;
+            bottom: -80px;
+            background-color: rgb(37 211 102);
+            height: 4px;
+            box-sizing: border-box;
+            width: 100px;
+            z-index: 1;
+        }
+        
+        .nuestro-equipo {
+            background-image: url(http://www.gelfuzion.com/img/slides/nivo/bg-1.jpg);
+            filter: brightness(0.4);
+            width: 100%;
+            height: 100vh;
+            height: 500px;
+        }
+        /* ----- SECCION DE MUNDO -------*/
+        
+        .mundo-container {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .mundo-column>img {
+            width: 500px;
+        }
+        
+        .mundo-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin: 20px 20px;
+            font-size: 20px;
+        }
+        
+        .mundo-column-izq {
+            right: 50%;
+        }
+        
+        .mundo-column>p {
+            background-color: #fff;
+            border: 1px solid rgb(255, 255, 255);
+            box-shadow: 10px 10px 10px 10px rgb(37 211 102);
+            color: black;
+            border-radius: 1rem;
+            padding: 5px 5px;
+        }
+        
+        @media (max-width: 720px) {
+            .qn-sm-contenedor h1 {
+                font-size: 2rem;
+                top: 30%;
+                left: 20%;
+            }
+            .mundo-column>img {
+                width: 200px;
+                display: none;
+            }
+            .mundo-column-izq {
+                right: 50%;
+            }
+            .mundo-column>p {
+                position: relative;
+                display: flex;
+                font-size: 15px;
+                width: 80%;
+                height: 120px;
+                border-radius: 1rem;
+                margin: 10px 10px;
+            }
+            .qn-sm-contenedor h1 {
+                font-size: 40px;
+                left: 20%;
+            }
+            .qn-sm-contenedor h1::before {
+                left: 30%;
+            }
+            .nuestro-equipo {
+                height: 350px;
+            }
+            .mundo-container {
+                display: flex;
+                justify-content: center;
+                margin-top: 10%;
+                margin-bottom: 10%;
+                width: 100%;
+            }
+            .mundo-column {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                margin: 0;
+                font-size: 12px;
+            }
+        }
         /* <<<<<---- fin CUERPO DE PAGINA  QUIENES SOMOS---->>>>*/
         /* <<<<<----inicio CUERPO DE PAGINA  QUE HACEMOS ---->>>>*/
         
@@ -787,6 +895,232 @@
             }
         }
         /* <<<<<---- fin CUERPO DE PAGINA  QUE HACEMOS---->>>>*/
+        /* <<<<<<<--------  inicio COMO LO HACEMOS  ------------->>>>>>>*/
+        
+        .como-container {
+            padding-top: 137px;
+            margin-bottom: 120px;
+        }
+        
+        .como-trabajamos {
+            float: left;
+            width: 60%;
+        }
+        
+        .como-trabajamos img {
+            background-image: url(http://www.gelfuzion.com/img/slides/nivo/bg-1.jpg);
+            height: max-content;
+            filter: brightness(0.4);
+            width: 100%;
+            height: 100%;
+        }
+        
+        .como-trabajamos h1 {
+            color: #fff;
+            position: absolute;
+            font-size: 4rem;
+            margin-top: 100px;
+            margin-left: 30px;
+            z-index: 1;
+        }
+        
+        .como-trabajamos h1::before {
+            content: '';
+            position: absolute;
+            left: 40%;
+            bottom: -80px;
+            background-color: rgb(24, 201, 68);
+            height: 4px;
+            box-sizing: border-box;
+            width: 100px;
+            z-index: 1;
+        }
+        
+        .como-aside {
+            position: static;
+            margin-top: 60px;
+            z-index: 10;
+        }
+        
+        .como-aside img {
+            width: 100px;
+            height: 120px;
+        }
+        
+        .row-aside {
+            margin: 30px 20px 30px 0;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .fa-microscope,
+        .fa-network-wired,
+        .fa-rocket,
+        .fa-laptop-code {
+            width: 50px;
+            height: 50px;
+            margin-left: 30px;
+            color: rgb(18, 151, 51);
+        }
+        
+        .row-aside p {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-left: 20px;
+            width: 70%;
+        }
+        
+        @media (max-width: 840px) {
+            .como-trabajamos {
+                width: 100%;
+            }
+            .como-trabajamos img {
+                width: 100%;
+                height: 350px;
+            }
+            .como-trabajamos h1 {
+                color: rgb(255, 255, 255);
+                position: absolute;
+                font-size: 2.5rem;
+                margin-top: 100px;
+                left: 10%;
+                z-index: 1;
+            }
+            .como-aside {
+                z-index: 0;
+                margin-bottom: 0;
+                float: inline-end;
+            }
+            .como-aside img {
+                width: 100px;
+                height: 120px;
+            }
+            .row-aside {
+                display: flex;
+                flex-direction: row;
+            }
+            .row-aside p {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                width: 70%;
+            }
+            .como-container {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        /* <<<<<---- fin CUERPO DE PAGINA  QUE HACEMOS---->>>>*/
+        /* <<<<<<<--------  inicio CONTACTO  ------------->>>>>>>*/
+        
+        .formulario {
+            display: table;
+            padding-top: 117px;
+            margin-bottom: 5%;
+            width: 100%
+        }
+        
+        textarea {
+            width: 370px;
+            border-radius: 5px;
+        }
+        
+        label {
+            font-size: 15px;
+        }
+        
+        input {
+            border: 1px solid white;
+            border-bottom: 1px solid rgb(70, 70, 70);
+            padding: 5px;
+            margin-top: 5px;
+        }
+        
+        .contactanos {
+            padding-top: 20px;
+            float: left;
+            width: 65%;
+            height: 35vh;
+        }
+        
+        .contactanos-aside {
+            float: right;
+            width: 35%;
+            margin-top: 3%;
+        }
+        
+        .contactanos h1 {
+            color: rgb(255, 255, 255);
+            position: absolute;
+            font-size: 5rem;
+            margin-top: 100px;
+            margin-left: 100px;
+            z-index: 1;
+        }
+        
+        .contactanos img {
+            background-image: url(http://www.gelfuzion.com/img/slides/nivo/bg-1.jpg);
+            height: max-content;
+            filter: brightness(0.4);
+            width: 97%;
+        }
+        
+        .contactanos h1::before {
+            content: '';
+            position: absolute;
+            left: 10%;
+            bottom: -80px;
+            background-color: #a01e0d;
+            height: 4px;
+            box-sizing: border-box;
+            width: 100px;
+            z-index: 1;
+        }
+        
+        .textarea {
+            padding: 5px 5px 5px 5px;
+        }
+        
+        .send {
+            width: 80px;
+            height: 34px;
+            font-size: 15px;
+            border-radius: 5px;
+            background-color: #007bff;
+            border: #007bff;
+            color: #fff;
+        }
+        
+        .send:hover {
+            background-color: #a01e0d;
+            transition: 1s;
+        }
+        
+        @media (max-width:720px) {
+            .contactanos {
+                padding-top: 20px;
+                float: top;
+                width: 100%;
+                height: 35vh;
+            }
+            .contactanos-aside {
+                float: bottom;
+                width: 95%;
+                margin-top: 20%;
+            }
+            .contactanos h1 {
+                font-size: 2.5rem;
+                margin-top: 60px;
+                margin-left: 20%;
+            }
+            .contactanos img {
+                width: 100%;
+            }
+            .contactanos h1::before {
+                bottom: -50px;
+            }
+            textarea {
+                width: 340px;
+            }
+        }
+        /* <<<<<---- fin CUERPO DE PAGINA CONTACTO---->>>>*/
         /* <<<<<<<--------  inicio FOOTER DE LA PAGINA ------------->>>>>>>*/
         
         .container {
