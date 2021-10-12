@@ -91,7 +91,7 @@
 */
         
         .banner-2 {
-            height: 80vh;
+            height: 40vh;
             background: url(https://presenterse.com/wp-content/uploads/2020/06/INVERTIR-EN-TECNOLOGIA.png) no-repeat;
             opacity: 10;
             background-size: cover;
@@ -279,10 +279,10 @@
         }
         
         .right-slideshow {
-            background-color: #fff;
-            box-shadow: 0 5px 0px 0 rgba(0, 0, 0, 0.4);
-            top: 50%;
-            padding: 100px 0 50px 20px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 1rem 1rem 1rem 1rem rgba(0, 0, 0, 0.4);
+            margin-top: 200px;
+            padding: 20px 0 50px 20px;
             width: 70%;
         }
         
@@ -295,17 +295,6 @@
         .right-slideshow h1 {
             margin: 10px 10px 10px 10px;
             font-size: 35px;
-        }
-        
-        .right-slideshow h1::before {
-            content: '';
-            position: absolute;
-            left: 15%;
-            top: 320px;
-            background-color: rgb(37 211 102);
-            height: 4px;
-            width: 100px;
-            z-index: 1;
         }
         
         .ministerio-justicia {
@@ -646,7 +635,7 @@
         .soporte-rrhh,
         .reclutamiento-it {
             width: 50%;
-            height: 400px;
+            height: 430px;
             margin: 10px 20px 10px 50px;
             border-radius: 2rem;
             box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
@@ -872,7 +861,7 @@
         }
         
         #servicio4Icon {
-            color: #597bb8;
+            color: #1ba761;
         }
         
         @media (max-width:720px) {
@@ -888,10 +877,6 @@
             }
             .servicios4-item p {
                 margin-left: 5%;
-            }
-            #servicios4-row-right {
-                border-top: 1px solid #1ba761;
-                padding-top: 20px;
             }
         }
         /* <<<<<---- fin CUERPO DE PAGINA  QUE HACEMOS---->>>>*/
@@ -986,8 +971,8 @@
                 z-index: 1;
             }
             .como-aside {
-                z-index: 0;
-                margin-bottom: 0;
+                margin-bottom: 500px;
+                margin-top: 0;
                 float: inline-end;
             }
             .como-aside img {
