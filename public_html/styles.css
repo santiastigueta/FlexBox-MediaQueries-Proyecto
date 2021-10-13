@@ -477,7 +477,7 @@
         .mundo-column>p {
             background-color: #fff;
             border: 1px solid rgb(255, 255, 255);
-            box-shadow: 10px 10px 10px 10px rgb(37 211 102);
+            box-shadow: 10px 10px 10px 10px rgb(63 144 203);
             color: black;
             border-radius: 1rem;
             padding: 5px 5px;
@@ -868,6 +868,7 @@
             .servicios4 {
                 flex-direction: column;
                 height: fit-content;
+                margin-bottom: 150px;
             }
             .servicios4-row {
                 display: flex;
@@ -914,7 +915,7 @@
             position: absolute;
             left: 40%;
             bottom: -80px;
-            background-color: rgb(24, 201, 68);
+            background-color: rgb(110, 33, 141);
             height: 4px;
             box-sizing: border-box;
             width: 100px;
@@ -923,7 +924,6 @@
         
         .como-aside {
             position: static;
-            margin-top: 60px;
             z-index: 10;
         }
         
@@ -933,7 +933,8 @@
         }
         
         .row-aside {
-            margin: 30px 20px 30px 0;
+            margin: 50px 20px 30px 0;
+            padding-top: 15px;
             display: flex;
             flex-direction: row;
         }
@@ -945,7 +946,7 @@
             width: 50px;
             height: 50px;
             margin-left: 30px;
-            color: rgb(18, 151, 51);
+            color: rgb(110, 33, 141);
         }
         
         .row-aside p {
@@ -955,25 +956,32 @@
         }
         
         @media (max-width: 840px) {
+            .como-container {
+                padding-top: 0;
+                margin-bottom: 0;
+            }
             .como-trabajamos {
-                width: 100%;
+                width: 0;
+                float: inline-start;
             }
             .como-trabajamos img {
                 width: 100%;
-                height: 350px;
+                height: 300px;
             }
             .como-trabajamos h1 {
-                color: rgb(255, 255, 255);
-                position: absolute;
-                font-size: 2.5rem;
-                margin-top: 100px;
-                left: 10%;
+                color: rgb(0, 0, 0);
+                position: relative;
+                font-size: 2rem;
+                margin-top: -100px;
                 z-index: 1;
             }
+            .como-trabajamos h1::before {
+                bottom: -20px;
+                background-color: rgb(110, 33, 141);
+            }
             .como-aside {
-                margin-bottom: 500px;
-                margin-top: 0;
                 float: inline-end;
+                position: relative;
             }
             .como-aside img {
                 width: 100px;
@@ -997,7 +1005,7 @@
         
         .formulario {
             display: table;
-            padding-top: 117px;
+            padding-top: 20px;
             margin-bottom: 5%;
             width: 100%
         }
@@ -1290,7 +1298,7 @@
                 left: 40%;
             }
             .ppp h4 {
-                font-size: 20px;
+                font-size: 12px;
             }
             .que-hacemos-main h1 {
                 font-size: 30px;
